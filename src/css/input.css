@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    body{
+        font-family: 'Nunito Sans', sans-serif;
+    }
+}
+@layer components{ 
+    .btn{ 
+        @apply py-4 px-6 text-white bg-lightBlue font-black text-sm border-2 border-lightBlue
+    } 
+    .btn:hover{
+        @apply bg-white transition-colors text-lightBlue border-2 border-lightBlue
+    }
+    .btn-black{ 
+        @apply py-4 px-6 text-lightBlack bg-[#E6E6E6] font-black text-sm border-2 border-[#E6E6E6]
+    } 
+    .btn-black:hover{
+        @apply bg-white transition-colors text-lightBlack border-2 border-[#E6E6E6]
+    }
+}
